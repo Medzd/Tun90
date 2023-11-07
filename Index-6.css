@@ -1,3 +1,4 @@
+<style>
 .popup {
   display: none;
   position: fixed;
@@ -22,3 +23,4 @@
   float: right;
   cursor: pointer;
 }
+</style>
