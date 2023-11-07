@@ -1,0 +1,110 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Changa:wght@400&display=swap');
+    .news-bar {
+  background-color: #333;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  font-family: 'Changa', sans-serif; /* تغيير نوع الخط إلى Changa */
+  font-size: 24px; /* تكبير حجم الخط حسب الحاجة */
+}
+    .news-container {
+      animation: marquee 50s linear infinite;
+    }
+    .news-item {
+      display: inline-flex;
+      align-items: center;
+      padding: 0px;
+    }
+    .news-item i {
+      margin-right: 10px;
+    }
+.news-item a {
+  color: #fff; /* تغيير لون العناوين إلى اللون الأبيض */
+}
+
+    .breaking-news {
+      text-align: center;
+      font-weight: bold;
+      background: #FF0000; /* تغيير لون الخلفية هنا */
+      padding: 5px 2px; /* تضبيط حجم الخلفية */
+      border-radius: 2px; /* تضبيط زوايا الخلفية */
+      z-index: 3; /* زيادة قيمة z-index للعنصر "breaking-news" ليظهر من فوق العناوين */
+    }
+    .breaking-news i {
+      margin-right: 5px;
+    }
+    .breaking-news-text {
+      animation: textShadow 0s linear infinite; /* تأثير حركة الظل تحت العناوين */
+      text-shadow: 0 0 3px #FF0000; /* لون الظل والحجم هنا */
+      color: #fff; /* لون النص */
+      position: relative; /* إضافة خاصية الوضع */
+      z-index: 2; /* تحديد الترتيب الطبقي للكلمة */
+    }
+    .marquee-text {
+      animation: marquee 35s linear infinite; /* زيادة مدة الكتلة الزمنية لتباطؤ الحركة */
+
+      position: relative; /* إضافة خاصية الوضع */
+      z-index: 1; /* تحديد الترتيب الطبقي للشريط المتحرك */
+    }
+    @keyframes marquee {
+      100% {
+        transform: translateX(100%);
+      }
+      0% {
+        transform: translateX(-100%);
+      }
+    }
+    @keyframes textShadow {
+      100% {
+        text-shadow: 0 0 1px #FF0000;
+      }
+      100% {
+        text-shadow: 0 0 6px #FF0000; /* يمكنك تغيير اللون وحجم الظل حسب الرغبة */
+      }
+    }
+  </style>
+
+
+  <div class="news-bar">
+    <div class="news-item">
+      <div class="breaking-news">
+        <i class="fa fa-rss"></i>
+        <span class="breaking-news-text">عاجل</span>
+      </div>
+    </div>
+    <div class="news-container marquee-text">
+      <div class="news-item">
+        <i class="fa fa-rss"></i>
+        <a href="رابط_العنوان_الأول">صادم: تقتل زوجة أخيها حرقا..وتفاصيل مروعة..!</a>
+      </div>
+      <div class="news-item">
+        <i class="fa fa-rss"></i>
+        <a href="رابط_العنوان_الثاني">وزارة الخارجية الصينية: سنعمل على استعادة السلام في الأراضي الفلسـ.طينية</a>
+      </div>
+      <div class="news-item">
+        <i class="fa fa-rss"></i>
+        <a href="رابط_العنوان_الثالث">عاجل/صور جديدة محينة للارهابيين الفارين من سجن المرناقية..</a>
+      </div>
+      <div class="news-item">
+        <i class="fa fa-rss"></i>
+        <a href="رابط_العنوان_الرابع">عنوان الخبر الرابع</a>
+      </div>
+      <div class="news-item">
+        <i class="fa fa-rss"></i>
+        <a href="رابط_العنوان_الخامس">عنوان الخبر الخامس</a>
+      </div>
+
+<div class="news-item">
+        <i class="fa fa-rss"></i>
+        <a href="رابط_العنوان_الرابع">عنوان الخبر الرابع</a>
+      </div>
+      <div class="news-item">
+        <i class="fa fa-rss"></i>
+        <a href="رابط_العنوان_الخامس">عنوان الخبر الخامس</a>
+      </div>
+
+    </div>
+  </div>
