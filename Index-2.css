@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@400&display=swap');
+    .news-bar {
+  background-color: #333;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  font-family: 'Changa', sans-serif; 
+  font-size: 24px; 
+}
+    .news-container {
+      animation: marquee 50s linear infinite;
+    }
+    .news-item {
+      display: inline-flex;
+      align-items: center;
+      padding: 0px;
+    }
+    .news-item i {
+      margin-right: 10px;
+    }
+.news-item a {
+  color: #fff;
+
+}
+
+    .breaking-news {
+      text-align: center;
+      font-weight: bold;
+      background: #FF0000; 
+
+      padding: 5px 2px; 
+      border-radius: 2px; 
+      z-index: 3;
+    }
+    
+    .breaking-news i {
+      margin-right: 5px;
+    }
+    
+    .breaking-news-text {
+      animation: textShadow 0s linear infinite; 
+      text-shadow: 0 0 3px #FF0000;
+      color: #fff; 
+      position: relative; 
+      z-index: 2;
+    }
+    
+    .marquee-text {
+      animation: marquee 35s linear infinite; 
+      position: relative; 
+      z-index: 1;
+    }
+    
+    @keyframes marquee {
+      100% {
+        transform: translateX(100%);
+      }
+      0% {
+        transform: translateX(-100%);
+      }
+    }
+    
+    @keyframes textShadow {
+      100% {
+        text-shadow: 0 0 1px #FF0000;
+      }
+      100% {
+        text-shadow: 0 0 6px #FF0000;
+      }
+    }
